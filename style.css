@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@200;400;500;600&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* ------- utility class start----- */
+.container {
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-columns-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-columns-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex-between {
+    justify-content: space-between;
+}
+
+.flex-around {
+    justify-content: space-around;
+}
+
+.gap-5 {
+    gap: 5px;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+.gap-15 {
+    gap: 15px;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.padding {
+    padding: 1rem 2rem;
+}
+
+.heading {
+    text-align: center;
+    font-size: 3rem;
+    color: #262626;
+    font-family: Arima, cursive;
+    font-weight: 600;
+}
+
+.heading span {
+    color: #0098a1;
+}
+
+.btn {
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 6px;
+    border: 2px solid #0098a1;
+    outline: none;
+    color: #fff;
+    background-color: #0098a1;
+    padding: 5px 25px;
+    font-family: 'Arima', cursive;
+    font-weight: 600;
+    font-size: 16px;
+    transition: .2s;
+}
+
+.btn-2 {
+    margin-top: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    border: 2px solid #0098a1;
+    outline: none;
+    color: #0098a1;
+    padding: 5px 25px;
+    font-family: 'Arima', cursive;
+    font-weight: 600;
+    font-size: 16px;
+    transition: .2s;
+    background-color: #fff;
+}
+
+
+.btn:hover {
+    background-color: #fff;
+    color: #0098a1;
+}
+
+.btn-2:hover {
+    background-color: #0098a1;
+    color: #fff;
+}
+
+/* ------- utility class end----- */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header {
+    background-color: #fff;
+    width: 95%;
+    position: fixed;
+    top: 1.4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.3);
+    transition: .2s linear;
+    z-index: 1000;
+}
+
+.header.active {
+    border-radius: 0;
+    top: 0;
+    width: 100%;
+}
+
+.navbar {
+    font-family: 'Arima', cursive;
+    width: 100%;
+    height: 100%;
+    padding: 0.7rem 2rem;
+    border-radius: 20px;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.navbar .logo span {
+    color: #0098a1;
+}
+
+.navbar .menu-list a {
+    color: #262626;
+    font-size: 17px;
+    font-weight: 600;
+    transition: .2s;
+}
+
+.navbar .menu-list a:hover {
+    color: #0098a1;
+    ;
+}
+
+.bar {
+    position: absolute;
+    right: 1.5rem;
+    display: none;
+}
+
+.bar i {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.bar i:hover {
+    color: #0098a1;
+}
+
+/* -----home-section ------ */
+
+.home-section {
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    position: relative;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.video video {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.home-content {
+    flex-basis: 65%;
+}
+
+.home-content h1 {
+    font-family: Arima, cursive;
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(0 0 0) -3px 3px 0px;
+
+}
+
+.home-content p {
+    font-family: Arima, cursive;
+    color: #fff;
+    font-size: 19px;
+    line-height: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 4px #000;
+}
+
+.home-form {
+    background-color: #fff;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border: 4px;
+    flex-basis: 30%;
+    margin-top: 60px;
+}
+
+.home-form form {
+    width: 100%;
+}
+
+form input,
+form textarea {
+    display: block;
+    width: 100%;
+    padding: 13px 10px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    border: 2px solid #fff;
+    background: #eee;
+    outline: none;
+    border-radius: 8px;
+    color: #0098a1;
+    transition: .2s;
+    font-size: 16px;
+}
+
+form input:focus,
+form textarea:focus {
+    border: 2px solid #0098a1;
+}
+
+form textarea {
+    resize: none;
+    height: 200px;
+}
+
+form .label {
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 16px;
+    color: #0098a1;
+    font-weight: 600;
+}
+
+.home-form h3 {
+    text-align: center;
+    font-family: 'Arima', cursive;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* ---------- feature ---------- */
+.feature-content {
+    font-family: 'Arima', cursive;
+    padding: 15px;
+    text-align: center;
+}
+
+.feature-boxes {
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.5);
+    margin-top: 15px;
+}
+
+.feature-name {
+    font-size: 1.5rem;
+    color: #0098a1;
+    font-weight: 600;
+}
+
+.feature-content p {
+    margin: 10px 0px;
+    color: #262626;
+    font-weight: 600;
+}
+
+.icons i {
+    font-size: 1.5rem;
+    color: rgb(202, 202, 9);
+}
+
+.feature-img {
+    width: 100%;
+    height: 250px;
+}
+
+.feature-img img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ------ about ------- */
+
+.about-img {
+    width: 100%;
+}
+
+.about-img img {
+    width: 100%;
+}
+
+.about-content {
+    font-family: 'Arima', cursive;
+    align-self: center;
+    text-align: left;
+}
+
+.about-content p {
+    color: #262626;
+    font-weight: 600;
+}
+
+.about-content .btn {
+    padding: 0.3rem 25px;
+}
+
+.buttons {
+    margin-top: 10px;
+}
+
+/* ------ gallery-box ----- */
+.gallery-box {
+    width: 100%;
+    height: 300px;
+}
+
+.gallery-box img {
+    width: 100%;
+    height: 100%;
+}
+
+/* ---------- Review-section ------------ */
+.Review-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/gallery-img-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 40px;
+}
+
+.Review-section .heading {
+    color: #fff;
+}
+
+.Review-section .heading span {
+    color: rgb(202, 202, 9);
+}
+
+.Review-section .container {
+    margin-top: 80px;
+}
+
+.review-box {
+    font-family: 'Arima', cursive;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 11;
+    background-color: #fff;
+}
+
+.review-box span {
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #0098a1;
+}
+
+.review-box p {
+    color: #262626;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.r-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 7px solid #fff;
+    position: absolute;
+    left: 50%;
+    top: -40px;
+    transform: translateX(-50%);
+}
+
+.r-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%
+}
+
+.map {
+    width: 100%;
+}
+
+.map iframe {
+    width: 100%;
+}
+
+.Contact-section .container {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 1rem;
+    background-color: #262626;
+}
+
+footer p {
+    font-family: 'Arima', cursive;
+    color: #fff;
+    font-weight: 600;
+}
+
+footer p span {
+    color: #0098a1;
+}
+
+@media screen and (max-width:1200px) {
+    .home-content h1 {
+        font-size: 3rem;
+    }
+
+    .home-content {
+        flex-basis: 48%;
+    }
+
+    .home-form {
+        flex-basis: 48%;
+    }
+}
+
+@media screen and (max-width:888px) {
+    .home-section {
+        flex-flow: column;
+        padding-top: 100px !important;
+    }
+
+    .home-content {
+        width: 100%;
+    }
+
+    .home-form {
+        width: 100%;
+    }
+
+    .grid-columns-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-columns-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .about-img {
+        max-width: 500px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .about-content {
+        max-width: 600px;
+        margin: 10px auto;
+        width: 100%;
+    }
+
+    .review-box {
+        margin-top: 40px;
+    }
+
+    .Review-section .container {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .bar {
+        display: flex;
+    }
+
+    .menu-list {
+        position: absolute;
+        left: 0px;
+        top: 101%;
+        background-color: #fff;
+        padding: 1rem 2rem;
+        width: 100%;
+        border-radius: 20px;
+        flex-flow: column;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: .2s;
+    }
+
+    .menu-list.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .menu-list.active-1 {
+        border-radius: 0;
+        width: 100%;
+    }
+
+    .padding {
+        padding: 1rem 1rem;
+    }
+
+    .grid-columns-3 {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .home-content h1 {
+        font-size: 2.5rem;
+    }
+}

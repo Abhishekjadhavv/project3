@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- ----Custom Css---- -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ---- Custom JS------ -->
+    <script src="script.js" defer></script>
+
+    <title>Travel Website</title>
+</head>
+
+<body>
+    <!-- ------------- header section start -------- -->
+    <header class="header">
+        <nav class="navbar flex flex-between">
+            <div class="logo">Travel<span>.</span></div>
+            <ul class="menu-list flex gap-10">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Feature">Feature</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Gallery">Gallery</a></li>
+                <li><a href="#Review">Review</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+
+            <div class="bar flex">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+    <!-- ------------- header section end -------- -->
+
+    <main>
+        <!-- ------ home section start ----- -->
+        <section class="home-section flex flex-around padding" id="Home">
+            <div class="video">
+                <video src="img/home-video.mp4" loop muted autoplay></video>
+            </div>
+
+            <div class="home-content">
+                <h1>explore new places, <br /> adventure awaits. </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quas excepturi repellat nihil
+                    soluta recusandae labore veritatis possimus in sint.</p>
+            </div>
+
+            <div class="home-form">
+                <form action="#">
+                    <h3>search your destination</h3>
+
+                    <span class="label">location</span>
+                    <input type="text" placeholder="place you want to visit">
+
+                    <span class="label">guest members</span>
+                    <input type="number" placeholder="number of peoples">
+
+                    <span class="label">arrivals</span>
+                    <input type="date">
+
+                    <span class="label">leaving</span>
+                    <input type="date">
+
+                    <button class="btn">search</button>
+
+                </form>
+            </div>
+        </section>
+        <!-- ------ home section end ----- -->
+
+        <!-- ------ Feature section start ----- -->
+        <section class="Feature-section padding" id="Feature">
+            <h1 class="heading"><span>F</span>eatured <span>L</span>ocation </h1>
+
+            <div class="container grid grid-columns-3 gap-20">
+                <div class="feature-boxes">
+                    <div class="feature-img">
+                        <img src="img/featued-img-1.jpg" alt="">
+                    </div>
+                    <div class="feature-content">
+                        <div class="feature-name">Hawaii</div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam consectetur necessitatibus
+                            itaque suscipit dignissimos. Deserunt!</p>
+                        <div class="icons">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                        <button class="btn">Check Out</button>
+                    </div>
+                </div>
+
+                <div class="feature-boxes">
+                    <div class="feature-img">
+                        <img src="img/featued-img-2.jpg" alt="">
+                    </div>
+                    <div class="feature-content">
+                        <div class="feature-name">Ggypt</div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam consectetur necessitatibus
+                            itaque suscipit dignissimos. Deserunt!</p>
+                        <div class="icons">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                        <button class="btn">Eqypt</button>
+                    </div>
+                </div>
+                <div class="feature-boxes">
+                    <div class="feature-img">
+                        <img src="img/featued-img-3.jpg" alt="">
+                    </div>
+                    <div class="feature-content">
+                        <div class="feature-name">India</div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam consectetur necessitatibus
+                            itaque
+                            suscipit dignissimos. Deserunt!</p>
+                        <div class="icons">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                        <button class="btn">Check Out</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ------ Feature section end----- -->
+
+        <!-- ------ About section start ----- -->
+        <section class="About-section padding gap-20" id="About">
+            <h1 class="heading"><span>A</span>bout <span>U</span>s</h1>
+
+            <div class="container grid grid-columns-2">
+                <div class="about-img">
+                    <img src="img/about-img.png" alt="">
+                </div>
+
+                <div class="about-content">
+                    <h2 class="heading" style="color:#0098a1;text-align: left;">Why Choose Us?</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore at illum saepe tempora
+                        distinctio, dignissimos accusantium laboriosam architecto ab itaque.<br />
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, officiis.
+                    </p>
+
+                    <div class="buttons">
+                        <button class="btn-2">Read more</button>
+                        <button class="btn">Get In Tech</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- ------ About section end ----- -->
+
+        <!-- ------ Gallery section start ----- -->
+        <section class="Gallery-section padding" id="Gallery">
+            <h1 class="heading"><span>G</span>allery</h1>
+            <div class="container grid grid-columns-3 gap-20">
+                <div class="gallery-box">
+                    <img src="img/gallery-img-1.jpg" alt="">
+                </div>
+                <div class="gallery-box">
+                    <img src="img/gallery-img-2.jpg" alt="">
+                </div>
+                <div class="gallery-box">
+                    <img src="img/gallery-img-3.jpg" alt="">
+                </div>
+                <div class="gallery-box">
+                    <img src="img/gallery-img-4.jpg" alt="">
+                </div>
+                <div class="gallery-box">
+                    <img src="img/gallery-img-5.jpg" alt="">
+                </div>
+                <div class="gallery-box">
+                    <img src="img/gallery-img-6.jpg" alt="">
+                </div>
+            </div>
+
+        </section>
+        <!-- ------ Gallery section end ----- -->
+
+        <!-- ------ Review section start ----- -->
+        <section class="Review-section padding" id="Review">
+            <h1 class="heading"><span>R</span>eview</h1>
+
+            <div class="container grid grid-columns-3 gap-20">
+                <div class="review-box">
+                    <div class="r-img"><img src="img/pic-2.png" alt=""></div>
+                    <span>Someone's Name</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad asperiores assumenda a consectetur
+                        illum quae.</p>
+                    <div class="icons">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                    </div>
+                </div>
+                <div class="review-box">
+                    <div class="r-img"><img src="img/pic-3.png" alt=""></div>
+                    <span>Someone's Name</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad asperiores assumenda a consectetur
+                        illum quae.</p>
+                    <div class="icons">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                    </div>
+                </div>
+                <div class="review-box">
+                    <div class="r-img"><img src="img/pic-4.png" alt=""></div>
+                    <span>Someone's Name</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad asperiores assumenda a consectetur
+                        illum quae.</p>
+                    <div class="icons">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ------ Review section end ----- -->
+
+        <!-- ------ Contact section start ----- -->
+        <section class="Contact-section padding" id="Contact">
+                 <h1 class="heading"><span>C</span>ontact <span>U</span>s</h1>
+
+                 <div class="container grid grid-columns-2 gap-20">
+                       <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120073.0745760079!2d75.23516030129645!3d19.87024401442712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdb9815a369bc63%3A0x712d538b29a2a73e!2z4KSU4KSw4KSC4KSX4KS-4KSs4KS-4KSmLCDgpK7gpLngpL7gpLDgpL7gpLfgpY3gpJ_gpY3gpLA!5e0!3m2!1shi!2sin!4v1656677733773!5m2!1shi!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                       </div>
+
+                       <div class="c-form">
+                           <form action="#">
+                                <input type="text" placeholder="Full Name">
+                                <input type="email" placeholder="Email">
+                                <textarea placeholder="Message"></textarea>
+                                <button class="btn-2">Message</button>
+                           </form>
+                       </div>
+                 </div>
+        </section>
+        <!-- ------ Contact section end ----- -->
+    </main>
+
+    <footer>
+          <p>Created By <span>Mr.Abhishek jadhav</span> | All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>
